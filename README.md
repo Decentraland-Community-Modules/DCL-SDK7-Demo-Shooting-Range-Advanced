@@ -1,6 +1,6 @@
 # Shooting Range Advanced
-_demo of shooting-range-advanced scene running in preview._
 
+![preview](https://github.com/TheCryptoTrader69/SDK7-Shooting-Range-Advanced/blob/main/images/preview.gif)
 
 ## Description
 Gun game mechanic along with bullet marks that appear at whatever angle the bullet strikes the target.
