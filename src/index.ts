@@ -9,8 +9,17 @@
 import { PlayerShootingArea } from "./shooting-range-advanced/player-shooting-area";
 import { TargetObject } from "./shooting-range-advanced/target-object";
 import { PLATFORM_STYLE_TYPE } from "./shooting-range-advanced/target-data";
+import { Entity, engine, Transform, MeshRenderer } from "@dcl/sdk/ecs";
 
 export function main() {
+	//create scene floor object
+	const entity:Entity = engine.addEntity();
+	Transform.create(entity, {
+		position: {x:16,y:0,z:16},
+		scale: {x:32,y:0,z:32},
+	});
+	MeshRenderer.setBox(entity);
+	
 	//NOTE: all that is required for you to set up shooting targets in your scene is:
 	//	1 - set a shooting area
 	// 	2 - create targets
